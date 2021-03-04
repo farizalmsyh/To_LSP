@@ -28,8 +28,8 @@
                                 <td>{{ $value->email }}</td>
                                 <td class="text-capitalize">{{ $value->role }}</td>
                                 <td>
-                                    <a href="{{ route('users.edit', [$value->id]) }}" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></a>
-                                    @if(Auth::user()->id != $value->id)
+                                    <!-- <a href="{{ route('users.edit', [$value->id]) }}" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></a>
+                                    @if(Auth::user()->id != $value->id) -->
                                     <a href="{{ route('users.delete', [$value->id]) }}" onclick="return confirm('Are you sure for delete this data ?')" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></a>
                                     @endif
                                 </td>
